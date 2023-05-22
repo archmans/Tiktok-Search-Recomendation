@@ -158,7 +158,6 @@ def createSubstringDictionary(comments, words, algorithm):
 def find_recommended_words(substr_dict_brute):
     recommended_word = []
     for i in range(3):
-        max_value = max(substr_dict_brute.values())
         max_key = max(substr_dict_brute, key=substr_dict_brute.get)
         recommended_word.append(max_key)
         substr_dict_brute.pop(max_key)
